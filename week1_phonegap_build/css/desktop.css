@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slider {
+	display:none;
+}
+
+#gallery {
+	display:none;
+}
+
+
+
+
+
+div#e {
+	display:none;
+}
+
+.photo-sticky  {
+	display:none;
+}
+
+.photo-refresh {
+	display:none;
+}
+
+
+.ui-block-e {
+	display:none;
+}
+
+
+.ui-grid-d > *:nth-child(n) {
+    width: 25%;
+}

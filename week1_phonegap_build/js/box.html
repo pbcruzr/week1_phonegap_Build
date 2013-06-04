@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>EO3404 Applied Digital Signal Processing</title>
+<link rel="shortcut icon" href="images/favicon.gif" type="image/ico" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon_57.png" sizes="57x57"/>
+<link rel="apple-touch-icon" href="images/apple-touch-icon_114.png" sizes="114x114"/>
+
+
+<link rel="stylesheet" href="../css/jquery.mobile-1.1.0.css" />
+<link rel="stylesheet" href="../css/slider.css" />
+<link rel="stylesheet" href="../css/custom.css" />
+<link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+<link rel="stylesheet" type="text/css" href="../css/tipped.css"/>
+<link rel="stylesheet" href="../css/template.css" />
+<link rel="stylesheet" href="css/print.css"  media="print">
+
+<link rel="stylesheet" type="text/css" href="../css/jquery.mobile.simpledialog2.css" />
+
+
+<script src="jquery-1.7.2.js"></script>
+<!--
+<script src="../js/jquery-ui.js"></script>
+-->
+<script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="files.json"></script>
+<script src="template.js"></script>
+<script src="jquery.mobile-1.1.1.js"></script>
+<script src="../videos/swfobject.js"></script>
+<!--<script type="text/javascript" src="../js/pagination02.js"></script>-->
+
+<script src="../MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script src="rangy/rangy-core.js"></script>
+<script src="rangy/rangy-cssclassapplier.js"></script>
+<script type="text/javascript" src="jquery.mobile.simpledialog2.js"></script>
+<script src="highlight_old.js"></script>
+<script type="text/javascript" src="spinners.js"></script>
+<script type="text/javascript" src="tipped.js"></script>
+<script type="text/javascript" src="tipped_custom.js"></script>
+</head>
+<body>
+scripts
+<!-- Start of first page: #one -->
+<div data-role="page">
+  <div data-role="header"  data-position="fixed" data-tap-toggle="false" data-theme="a">
+    <div><div data-role="controlgroup" id="pagenav" data-type="horizontal" data-theme="a" ></div><!--<div id="text_tools" style="display:inline; float:right; margin-top:-42px; margin-left:5px;">
+	<label for="note_highlight">highlight:</label>
+	<select name="note_highlight" id="note_highlight" data-role="slider" data-mini="true"  data-theme="a">
+		<option value="off">Off</option>
+		<option value="on">On</option>
+	</select> 
+</div>--><div data-role="fieldcontainer" style="width:150px; margin-top:-3px; margin-right:-24px;" class="ui-btn-right">
+                  <div data-role="controlgroup">
+                  <select  name="select-choice-0" id="select-choice-1" data-native-menu="false">
+                  <option value="1">Section A1</option>
+                  <option value="2">Section A2</option>
+                  <option value="3">Section A3</option>
+                  <option value="4">Section B1</option>
+                  <option value="5">Section B2</option>
+                  <option value="6">Section B3</option>
+                  <option value="7">Section C1</option>
+                  <option value="8">Section C2</option>
+                  <option value="9">Section D1</option>
+                  <option value="10">Section D2</option>
+                  <option value="11">Section D3</option>
+                  </select>
+                  </div>
+                  </div></div>
+    <!-- END NAV -->
+    <div data-role="navbar" class="nav-glyphish-example" style="clear:both">
+      <ul>
+        <li><a href="#"  data-href="#a" id="text" data-icon="text" data-theme="b" >Text</a></li>
+        <li><a href="#"  data-href="#b" id="video" data-icon="video" data-theme="b" >Video</a></li>
+        <li><a href="#"  data-href="#c" id="discuss" data-icon="discuss" data-theme="b"  >Discussion</a></li>
+        <li><a href="#"  data-href="#d" id="notes" data-icon="notes" data-theme="b">Notes</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+  </div>
+  <!--end header-->
+  <div data-role="content"><!--begin content-->
+    <div class="content_div"></div>
+    
+	<div id="a" style="display:block;" class="content_div">
+<div style="width:200px; color:blue; height:200px;"></div>
+	</div>
+    <div id="b" class="content_div">Video Section 1c</div>
+    <div id="c" class="content_div">Discussion Section 1c</div>
+    <div id="d" class="content_div">Notes Section 1c</div>
+  </div>
+  <!--end content-->
+  <div data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="../print_versions/1-Introduction-to-Signals.pdf" rel="external">Print</a></li>
+        <li><a href="../a.html" rel="external">FAQS</a></li>
+        <li><a href="../a.html" rel="external">Credits</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /footer -->
+</div>
+<!--end page-->
+<script src='js/swipe.js'></script>
+<script>
+
+// slider
+var slider = new Swipe(document.getElementById('slider'), {
+      callback: function(e, pos) {
+        
+        var i = bullets.length;
+        while (i--) {
+          bullets[i].className = ' ';
+        }
+        bullets[pos].className = 'on';
+
+      }
+    }),
+    bullets = document.getElementById('position').getElementsByTagName('em'),
+
+// tabs
+    tabs = new Swipe(document.getElementById('tabs'), {
+      callback: function(event,index,elem) {
+        setTab(selectors[index]);
+      }
+    }),
+    selectors = document.getElementById('tabSelector').children;
+
+for (var i = 0; i < selectors.length; i++) {
+  var elem = selectors[i];
+  elem.setAttribute('data-tab', i);
+  elem.onclick = function(e) {
+    e.preventDefault();
+    setTab(this);
+    tabs.slide(parseInt(this.getAttribute('data-tab'),10),300);
+  }
+}
+
+function setTab(elem) {
+  for (var i = 0; i < selectors.length; i++) {
+    selectors[i].className = selectors[i].className.replace('on',' ');
+  }
+  elem.className += ' on';
+}
+
+// url bar hiding
+(function() {
+    
+  var win = window,
+      doc = win.document;
+
+  // If there's a hash, or addEventListener is undefined, stop here
+  if ( !location.hash || !win.addEventListener ) {
+
+    //scroll to 1
+    window.scrollTo( 0, 1 );
+    var scrollTop = 1,
+
+    //reset to 0 on bodyready, if needed
+    bodycheck = setInterval(function(){
+      if( doc.body ){
+        clearInterval( bodycheck );
+        scrollTop = "scrollTop" in doc.body ? doc.body.scrollTop : 1;
+        win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+      } 
+    }, 15 );
+
+    if (win.addEventListener) {
+      win.addEventListener("load", function(){
+        setTimeout(function(){
+          //reset to hide addr bar at onload
+          win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+        }, 0);
+      }, false );
+    }
+  }
+
+})();
+</script>
+</body>
+</html>

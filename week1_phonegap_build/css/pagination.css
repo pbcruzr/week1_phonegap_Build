@@ -1,0 +1,45 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+#nav li {
+	float: left;
+	padding: 0 50px;
+	list-style: none;
+}
+
+#nav li#prev {
+	border-right: 1px solid #080266;
+	height: 60px;
+}
+
+#nav li#next {
+	border-left: 1px solid #080266;
+		height: 60px;
+}
+
+#nav .sub-menu {  
+	margin-top: 20px;
+}
+
+#nav .sub-menu li {
+	clear: left;
+	padding: 0 50px;
+	margin-left: -50px;  
+}
+
+#nav li a{
+	color: #fff;
+}
+
+
+/* CSS Document */
+

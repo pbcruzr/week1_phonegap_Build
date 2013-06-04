@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+
+.nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+
+
+#video .ui-icon { background:  url(images/glyphish-icons/233-fish.png) 50% 50% no-repeat; background-size: 28px 13px; }
+#discuss .ui-icon { background:  url(images/glyphish-icons/112-group.png) 50% 50% no-repeat; background-size: 32px 21px;  }
+#notes .ui-icon { background:  url(images/glyphish-icons/179-notepad.png) 50% 50% no-repeat;  background-size: 22px 28px; }
+#text .ui-icon { background:  url(images/glyphish-icons/96-book.png) 50% 50% no-repeat;  background-size: 18px 26px; }
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+screen and (max-moz-device-pixel-ratio: 2) {
+	
+	#video .ui-icon { background:  url(images/glyphish-icons/269-happyface@2x.png) 50% 50% no-repeat; background-size: 22px 22px; }
+	#discuss .ui-icon { background:  url(images/glyphish-icons/112-group@2x.png) 50% 50% no-repeat; background-size: 32px 21px;  }
+	#notes .ui-icon { background:  url(images/glyphish-icons/179-notepad@2x.png) 50% 50% no-repeat;  background-size: 22px 28px; }
+	#text .ui-icon { background:  url(images/glyphish-icons/96-book@2x.png) 50% 50% no-repeat;  background-size: 18px 26px; }
+}
+
+
+.ui-mini {
+	
+	margin:0; !important
+}

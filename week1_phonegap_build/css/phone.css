@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+#notes-button {
+	display:none;
+}
+
+
+.ui-header .ui-btn, .ui-footer .ui-btn {
+	display:none;
+}
+
+.ui-btn-right {
+	display:none;
+		
+}
+
+.example  {
+	width:80% !important
+}
+
+.mlCom {
+	width:80% !important
+}
+

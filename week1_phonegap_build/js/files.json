@@ -1,0 +1,125 @@
+var filesJSONObj = {
+    "files": [
+        {
+            "filename": "a1_1_basicDefinitions.html",
+            "title": "A1.1 Basic Definitions",
+	    "short": "A1.1"
+
+       },
+        {
+            "filename": "a1_2_energySignal.html",
+            "title": "A1.2 Energy Signal",
+	    "short": "A1.2"
+        },
+        {
+            "filename": "a1_3_powerSignals.html",
+            "title": "A1.3 Power",
+	    "short": "A1.3"
+        },
+        {
+            "filename": "a1_4_decibells.html",
+            "title": "A1.4 Decibels",
+	    "short": "A1.4"
+        },
+        {
+            "filename": "a1_5_SignalNoiseRatio.html",
+            "title": "A1.5 SNR",
+            "short": "A1.5"
+        },
+        {
+            "filename": "a1_6_QuantizationNoise.html",
+            "title": "A1.6 Quantization Noise",
+            "short": "A1.6"
+        },
+        {
+            "filename": "a1_7_matlabBasics.html",
+            "title": "A1.7 Matlab Basics",
+            "short": "A1.7"
+        },
+        {
+            "filename": "a1_8_matlabApplications.html",
+            "title": "A1.8 Matlab Apps",
+            "short": "A1.8"
+        },
+        {
+            "filename": "a2_1_introduction.html",
+            "title": "A2.1 Introduction",
+            "short": "A2.1"
+        },
+        {
+            "filename": "a2_2_continuousTime.html",
+            "title": "A2.2 Continuous Time",
+            "short": "A2.2"
+        },
+        {
+            "filename": "a2_3_discreteTime.html",
+            "title": "A2.3 Discrete Time",
+	    "short": "A2.3"
+        },
+        {
+            "filename": "a2_4_complexNumbers.html",
+            "title": "A2.4 Complex Numbers",
+	    "short": "A2.4"
+        },
+        {
+           "filename": "a2_5_complexExponentials.html",           
+	   "title": "A2.5 Complex Exponentials",
+	   "short": "A2.5"
+        },
+        {
+            "filename": "a2_6_representation.html",
+            "title": "A2.6 Representation",
+            "short": "A2.6"
+        },
+        {
+            "filename": "a2_7_generateSinusoidalSignalsUsingMatlab.html",
+            "title": "A2.7 Generate Sinusoidal Signals Using Matlab",
+            "short": "A2.7"
+        },
+        {
+            "filename": "a2_8_matlabVideos.html",
+            "title": "A2.8 Matlab Videos",
+            "short": "A2.8"
+        },
+        {
+            "filename": "a3_1_introduction.html",
+            "title": "A3.1 Introduction",
+            "short": "A3.1"
+        },
+        {
+            "filename": "a3_2_sinusoidsContinuousTime.html",
+            "title": "A3.2 Sinusoids Cont. Time",
+	    "short": "A3.2"
+        },
+        {
+            "filename": "a3_3_sinusoidsDiscreteTime.html",
+            "title": "A3.3 Sinusoids Discrete Time",
+	    "short": "A3.3"
+        },
+        {
+            "filename": "a3_4_frequencyDomainAmbiguity.html",
+            "title": "A3.4 Frequency Domain Ambiguity",
+	    "short": "A3.4"
+        },
+        {
+            "filename": "a3_5_aliasedFrequencies.html",
+            "title": "A3.5 Aliased Frequencies",
+	    "short": "A3.5"
+        },
+        {
+            "filename": "a3_6_sampledSinusoids.html",
+            "title": "A3.6 Sampled Sinusoids",
+	    "short": "A3.6"
+        },
+        {
+            "filename": "a3_7_fourierSeriesExpansion.html",
+            "title": "A3.7 Fourier Series Expansion",
+	    "short": "A3.7"
+        },
+        {
+            "filename": "a3_8_samplingTheorem.html",
+            "title": "A3.8 Sampling Theorem",
+	    "short": "A3.8"
+        }    
+     ]
+}

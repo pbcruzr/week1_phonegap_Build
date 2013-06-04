@@ -1,0 +1,68 @@
+
+/*
+.add-sticky, .sticky {
+	display: none;
+}
+
+/*#d .add-sticky {
+ color: #333;
+ top: 5em;
+ z-index: 99999;
+ cursor: pointer;
+ display: block;
+}
+*/
+#sections-list {
+	display: none;
+}
+
+
+#a.hide-notes .sticky {
+ display: none;
+}
+
+#a.show-notes .sticky{
+ display: block;
+}
+#d .sticky{
+ display: block;
+}
+*/
+
+.add-sticky {
+ color: #333;
+ top: 0px;
+ z-index: 99999;
+ cursor: pointer;
+ display: block;
+}
+
+#sections-list {
+	display: none;
+}
+
+.sticky {
+ display: none;
+}
+
+.hide-notes .sticky {
+ display: none;
+}
+
+.show-notes .sticky{
+ display: block;
+}
+
+/* Right Nav Buttons */
+#sections-button {
+	margin-right: 14px;
+}
+
+/*#notes-button {
+margin-right: 22px;
+} changed when took away drop-down sections menu 3/18/13 */
+
+#notes-button {
+margin-right: 0px;
+}
+

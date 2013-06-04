@@ -1,0 +1,276 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>EO3404 Applied Digital Signal Processing</title>
+     
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    
+    <link rel="shortcut icon" href="images/favicon.gif" type="image/ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon_114.png" sizes="114x114"/>
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
+	<script src="js/jquery-1.7.1.js"></script>
+	<script src="js/jquery.mobile-1.3.0.js"></script>
+    
+    <script src="phonegap.js"></script>
+	<script src="childbrowser.js"></script>
+    <script src="cordova-1.7.0.js"></script>
+
+    
+    
+    <style>
+	
+	.ui-mobile, .ui-mobile .ui-page {
+		background:#111111;
+		
+	}
+	
+	body {
+		background-color:#000;
+	}
+	
+	ul li {
+		list-style-type:none;
+		padding-bottom:24px;
+	}
+	
+	h1 {
+		text-overflow: ellipsis;
+		overflow: visible; !important
+		white-space: normal; !important
+	}
+		
+	.ui-header .ui-title, .ui-footer .ui-title {
+		 text-overflow:visible;
+		 overflow:visible;
+		
+
+	}
+
+
+    		
+    </style>
+	
+     <script src="http://code.jquery.com/jquery-latest.js"></script>
+     
+	</head> 
+<body> 
+
+<div data-role="page">
+
+<div data-role="header" data-theme="b" data-position="fixed" ><div style="position:fixed; z-index:50000; margin-top:4px; margin-left:15px; padding-bottom:6px;"><img src="images/npsLogo.png" width="85" height="60" alt="NPS Logo" /></div>
+		<h1>EO3404 Applied Digital Signal Processing: <span style="color:orange">Week One</span></h1><h2 style="margin-top:-8px;">Professor Roberto Cristi</h2>
+	</div><!-- /header -->
+    
+<div data-role="content" class="ui-content" role="main">
+<div style="width:505px; margin: 0 auto;">
+<iframe class="uve" scrolling="no" type="text/html" seamless="true" width="505" height="385" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" src="https://www.nps.edu/Video/UVE/Embedder/Default.aspx?app=GSEAS&mode=flash&media=iPadIntro2.mp4&media_webm=iPadIntro2.ogv&splash=eo3404_poster_image2.jpg&usessl=yes&width=480&height=360"></iframe></div>
+
+
+
+
+
+
+
+<div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="c" data-shadow="false">
+			<h3>A1: Introduction to Signals</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+				<a rel="external" href="a1_1_basicDefinitions.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A1.1: Basic Definitions</a>
+				<a rel="external" href="a1_2_energySignal.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A1.2: Energy of a Signal</a>
+				<a rel="external" href="a1_3_powerSignals.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A1.3: Power of a Signal</a>
+				<a rel="external" href="a1_4_decibells.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A1.4: Decibels</a>
+                <a rel="external" href="a1_5_SignalNoiseRatio.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A1.5: Signal to Noise Ratio</a>
+                <a rel="external" href="a1_6_QuantizationNoise.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A1.6: SNR and Quantization Noise</a>
+                <a rel="external" href="a1_7_matlabBasics.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A1.7: Matlab Basics</a>
+                <a rel="external" href="a1_8_matlabApplications.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A1.8: Matlab Applications</a>
+                </div>
+                </div>
+                
+<!--<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="c" data-shadow="false">
+			<h3>A2. Sinusoids and Complex Exponentials</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+                <a rel="external" href="a2_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A2.1: Introduction</a>
+				<a rel="external" href="a2_2_continuousTime.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A2.2: Sinusoids: Continuous Time</a>
+				<a rel="external" href="a2_3_discreteTime.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A2.3: Sinusoids: Discrete Time</a>
+				<a rel="external" href="a2_4_complexNumbers.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A2.4: Complex Numbers</a>
+                <a rel="external" href="a2_5_complexExponentials.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A2.5: Complex Exponentials</a>
+                <a rel="external" href="a2_6_representation.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A2.6: Representation</a>
+                <a rel="external" href="a2_7_generateSinusoidalSignalsUsingMatlab.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A2.7: Generate Sinusoidal Signals using Matlab</a>
+                <a rel="external" href="a2_8_matlabVideos.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A2.8: Matlab Videos</a>
+             </div>
+</div>
+                
+<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="c" data-shadow="false">
+			<h3>A3. Frequency Representation</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">              
+                
+                <a rel="external" href="a3_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A3.1: Introduction</a>
+				<a rel="external" href="a3_2_sinusoidsContinuousTime.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A3.2: Sinusoids: Continuous Time</a>
+				<a rel="external" href="a3_3_sinusoidsDiscreteTime.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A3.3: Sinusoids: Discrete Time</a>
+				<a rel="external" href="a3_4_frequencyDomainAmbiguity.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A3.4: Frequency Domain Ambiguity</a>
+                <a rel="external" href="a3_5_aliasedFrequencies.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A3.5: Aliased Frequencies</a>
+                <a rel="external" href="a3_6_sampledSinusoids.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A3.6: Sampled Sinusoids</a>
+                <a rel="external" href="a3_7_fourierSeriesExpansion.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A3.7: Fourier Series Expansion</a>
+                <a rel="external" href="a3_8_samplingTheorem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section A3.8: Sampling Theorem</a>
+                
+</div>
+</div>
+
+
+
+<div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c" data-shadow="false">
+			<h3>B1. Fourier Analysis</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+				<a rel="external" href="b1_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.1: Introduction</a>
+				<a rel="external" href="b1_2_periodicSignals.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.2: Periodic Signals</a>
+				<a rel="external" href="b1_3_referenceFrames.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.3: Reference Frames</a>
+				<a rel="external" href="b1_4_orthoReferenceSignals.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.4:Ortho Reference Signals</a>
+                <a rel="external" href="b1_5_discreteFourierSeries.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.5: Discrete Fourier Series</a>
+                <a rel="external" href="b1_6_signals.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.6: Signals</a>
+                <a rel="external" href="b1_7_DFT.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.7: DFT</a>
+                 <a rel="external" href="b1_8_fftInMatlab.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.8: FFT in Matlab</a>
+                 <a rel="external" href="b1_9_dftInSinusoidalSignals.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.9: DFT in Sinusoidal Signals</a>
+                 <a rel="external" href="b1_10_symmetryOfDFT.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.10: Symmetry of DFT</a>
+                 <a rel="external" href="b1_11_fftOfSinusoid.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B1.11: FFT of Sinusoid</a>
+</div>
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c" data-shadow="false">
+			<h3>B2. Spectral Estimation</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+				<a rel="external" href="b2_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B2.1: Introduction</a>
+				<a rel="external" href="b2_2_theDftAndFftForSpectralEstimation.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B2.2: The DFT (and the FFT) for Spectral Estimation</a>
+				<a rel="external" href="b2_3_frequencyResolution.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B2.3: Frequency Resolution</a>
+				<a rel="external" href="b2_4_frequencyArtifacts.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B2.4: Frequency Artifacts</a>
+                <a rel="external" href="b2_5_windowing.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B2.5: Windowing</a>
+</div>
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c" data-shadow="false">
+			<h3>B3. The Short Time Fourier Transform (STFT)</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+				<a rel="external" href="b3_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.1: Introduction</a>
+				<a rel="external" href="b3_2_stft.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.2: Short Term Fourier Transform (STFT)</a>
+				<a rel="external" href="b3_3_spectrogram.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.3: The Spectrogram</a>
+				<a rel="external" href="b3_4_exampleChirp.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.4: Example: Chirp</a>
+                <a rel="external" href="b3_5_exampleSealion.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.5: Example: Sealion</a>
+                <a rel="external" href="b3_6_exampleMusic.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.6: Example: Music</a>
+                <a rel="external" href="b3_7_matlabWavFiles.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.7: MATLAB Wav Files</a>
+                <a rel="external" href="b3_8_chirp.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.8: Chirp</a>
+                <a rel="external" href="b3_9_sealion.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.9: Sealion</a>
+                <a rel="external" href="b3_10_music.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section B3.10: Music</a>
+</div>
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c" data-shadow="false">
+			<h3>C1. Systems and Filters</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+				<a rel="external" href="c1_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.1: Introduction</a>
+				<a rel="external" href="c1_2_systemsDefinitions.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.2: Systems Definitions</a>
+				<a rel="external" href="c1_3_linearity.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.3: Linearity</a>
+				<a rel="external" href="c1_4_timeInvariance.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.4: Time Invariance</a>
+                <a rel="external" href="c1_5_stability.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.5: Stability</a>
+                <a rel="external" href="c1_6_causality.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.6: Causality</a>
+                <a rel="external" href="c1_7_firFilters.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.7: FIR Filters</a>
+                <a rel="external" href="c1_8_convolution.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.8: Convolution</a>
+                <a rel="external" href="c1_9_responseComplexExponential.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.9: Response to a Complex Exponential</a>
+                <a rel="external" href="c1_10_discreteTimeFourierTransform.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.10: Discrete Time Fourier Transform</a>
+                <a rel="external" href="c1_11_frequencyResponse.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C1.11: Frequency Response of an LTI System</a>
+</div>
+</div>
+
+
+<div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c" data-shadow="false">
+			<h3>C2. Design of Digital Filters</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+				<a rel="external" href="c2_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.1: Introduction</a>
+				<a rel="external" href="c2_2_filteringProblem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.2: Filtering Problem</a>
+				<a rel="external" href="c2_3_idealFilters.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.3: Ideal Filters</a>
+				<a rel="external" href="c2_4_nonIdealFilters.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.4: Non-Ideal Filters</a>
+                <a rel="external" href="c2_5_exampleMatlab.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.5: Example Using Matlab</a>
+                <a rel="external" href="c2_6_designWindow.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.6: Design using a Window</a>
+                <a rel="external" href="c2_7_filterDesign.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.7: FIR Filter Design</a>
+                <a rel="external" href="c2_8_computerBasedFilter.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.8: Computer Based Filter</a>
+                <a rel="external" href="c2_9_lowPassFilter.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.9: Low Pass Filter</a>
+                <a rel="external" href="c2_10_exampleofApplication.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C2.10: Example of Application</a>                
+</div>
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c" data-shadow="false">
+			<h3>C3. Matched Filters</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+				<a rel="external" href="c3_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C3.1: Introduction</a>
+				<a rel="external" href="c3_2_innerProduct.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C3.2: Inner Product</a>
+				<a rel="external" href="c3_3_correlationCoefficient.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C3.3: Correlation Coefficient</a>
+				<a rel="external" href="c3_4_matlab.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C3.4: Matlab</a>
+                <a rel="external" href="c3_5_radarSonarApplication.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C3.5: Radar Sonar Application</a>
+                <a rel="external" href="c3_6_matchedFilter.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C3.6: Matched Filter</a>
+                <a rel="external" href="c3_7_autocorrelation.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C3.7: Autocorrelation</a>
+                <a rel="external" href="c3_8_detectionWithNoise.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section C3.8: Detection with Noise</a>               
+</div>
+</div>
+
+
+<div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c" data-shadow="false">
+			<h3>D1. Fourier Transform</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+				<a rel="external" href="d1_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D1.1: Introduction</a>
+				<a rel="external" href="d1_2_continuousTimeSignals.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D1.2: Continuous Time Signals</a>
+				<a rel="external" href="d1_3_fourierTransform.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D1.3: Fourier Transform</a>
+				<a rel="external" href="d1_4_propertiesOfFT.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D1.4 Properties of FT</a>
+                <a rel="external" href="d1_5_bandwidth.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D1.5: Bandwidth</a>
+                <a rel="external" href="d1_6_ftFFT.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D1.6: FT and FFT</a>
+                <a rel="external" href="d1_7_matlabExample.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D1.7: MATLAB Example</a>             
+</div>
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c" data-shadow="false">
+			<h3>D2. Beamforming</h3>
+			<div data-role="controlgroup" data-theme="c" data-content-theme="c" data-shadow="false">
+				<a rel="external" href="d2_1_introduction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D2.1: Introduction</a>
+				<a rel="external" href="d2_2_propagation.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D2.2: Propagation</a>
+				<a rel="external" href="d2_3_modulatorAndDemodulator.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D2.3: Modulator and Demodulator: One Receiver</a>
+				<a rel="external" href="d2_4_multipleReceivers.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D2.4 Multiple Receivers</a>
+                <a rel="external" href="d2_5_beamforming.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D2.5: Beamforming</a>
+                <a rel="external" href="d2_6_choiceOfWeights.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D2.6: Choice of the Weights</a>
+                <a rel="external" href="d2_7_matlabExample.html" data-role="button" data-icon="arrow-r" data-iconpos="right" style="text-align:left;">Section D2.7: MATLAB Example</a>             
+</div>
+</div>-->
+
+
+
+
+
+</div>
+
+</div><!-- /page -->
+<script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'eo3404dsp'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37660932-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ <script src="phonegap.js"></script>
+       
+
+</body>
+</html>

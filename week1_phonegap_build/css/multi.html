@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="../Templates/eo3404_chapter_template_multiPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Section 1</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="jquery.mobile-1.1.0.css" />
+<!--<link rel="stylesheet" href="../css/slider.css" />-->
+<link rel="stylesheet" href="custom.css" />
+<link rel="stylesheet" type="text/css" href="highlight.css" />
+<link rel="stylesheet" href="template_multi.css" />
+<link rel="stylesheet" type="text/css" href="jquery.mobile.simpledialog2.css" /> 
+  
+
+<script src="../js/jquery-1.7.2.js"></script>
+<!--
+<script src="../js/jquery-ui.js"></script> 
+-->
+<script src="../js/files.json"></script>
+<script src="../js/template_multi.js"></script>
+<script src="../js/jquery.mobile-1.1.1.js"></script>
+<script src="../videos/swfobject.js"></script>
+<!--<script type="text/javascript" src="../js/pagination02.js"></script>-->
+
+<script src="../MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script src="../js/rangy/rangy-core.js"></script>
+<script src="../js/rangy/rangy-cssclassapplier.js"></script>
+<script type="text/javascript" src="../js/jquery.mobile.simpledialog2.js"></script>
+<script src="../js/highlight.js"></script>
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+
+<!-- Start of first page: #a -->
+<div data-role="page" id="one">
+  <div data-role="header"  data-position="fixed" data-tap-toggle="false" data-theme="a">
+    <div data-role="controlgroup" id="pagenav" data-type="horizontal" data-theme="a" ></div>
+    <!-- END NAV -->
+    <div data-role="navbar" class="nav-glyphish-example">
+      <ul>
+        <li><a href="#one" id="text" data-icon="text" data-theme="b"  class="ui-btn-active ui-state-persist">Text</a></li>
+        <li><a href="#two" id="video" data-icon="video" data-theme="b"  >Video</a></li>
+        <li><a href="#three" id="discuss" data-icon="discuss" data-theme="b"   >Discussion</a></li>
+        <li><a href="#four" id="notes" data-icon="notes" data-theme="b"    >Notes</a></li>
+      </ul>	 
+    </div><!-- /navbar --> 
+  </div> <!-- /header-->
+  <div data-role="content">
+   <!-- InstanceBeginEditable name="text content" --><h2><strong>A1.2 Energy of a Signal</strong></h2>
+
+                  <hr />
+
+
+
+                  <p class="intro">A continuous time signal \(x(t)\) has energy associated to it. Mathematically we define it as:</p>
+
+                  
+
+                  <p class="mlCom"><u>Total Energy</u>  \({E_X}\)  is the energy of a continuous time signal \(x(t)\)   defined as \[{E_X} = \int\limits_{ - \infty }^{ + \infty } {|x(t){|^2}dt} \]</p>
+
+                  
+
+                  <p>If the signal is (say) a voltage, than  \(x(t)\)  is in \(Volts\) and its energy in  \(Volt{s^2} \times \sec \).</p>
+
+                  
+
+                  <p class="example"><strong>Example</strong> The signal shown below is a square pulse of 5.0 Volts of duration 2.0 milliseconds. So all the other values outside this interval of definition are zero. Its total energy is given by \({E_X} = {(5.0)^2} \times 2.0 \times {10^{ - 3}} = 50 \times {10^{ - 3}}Volt{s^2} \times \sec \)</p>.
+
+                  
+
+                  
+
+                  <div class="imagePos"><img src="images/a1_image009.png" class="imageSize imageStyle" alt="figure 5 signal for the example" width=560 /><h4>Figure 5. Signal for the Example</h4></div><!--end div imagePos-->
+
+                  
+
+                  <p>As we can see from the example, in order to have a finite energy a signal must converge to zero at time goes to infinity. This is fine for an isolated pulse, or a short burst. But if you have a signal which keeps going for a while (so that we can approximate it with an infinite length) the Energy becomes infinity, thus meaningless.</p>
+
+                  
+
+                  <p>When a signal has a long (ideally infinite) duration, like a periodic pulse keeps repeating on and on (a bit like the Energizer Bunny which keeps going and going and going) then clearly the energy is infinite, since it never decays to zero. In this case we define the following:</p>
+
+                  
+
+                  <p class="mlCom"><u>Average Power</u> \({P_X}\) : <strong>Given a continuous time signal \(x(t)\)  its average power is defined as </strong><br>
+
+ \[{P_X} = \mathop {\lim }\limits_{T \to  + \infty } \frac{1}{T}\int\limits_{ - T/2}^{ + T/2} {{{\left| {x(t)} \right|}^2}dt} \]
+
+It is the average of the Total Energy over Time.</p>
+<!-- InstanceEndEditable -->
+   </div><!-- /content -->
+	 <div data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="../print_versions/1-Introduction-to-Signals.pdf" rel="external">Print</a></li>
+        <li><a href="../a.html" rel="external">FAQS</a></li>
+        <li><a href="../a.html" rel="external">Credits</a></li>
+      </ul>
+    </div><!-- /footer navbar-->
+  </div><!-- /footer --> 
+</div><!--end page--> 
+<!-- Start of page two -->
+<div data-role="page" id="two">
+  <div data-role="header"  data-position="fixed" data-tap-toggle="false" data-theme="a">
+  <div data-role="controlgroup" id="pagenav" data-type="horizontal" data-theme="a" ></div>
+    <!-- END NAV -->
+    <div data-role="navbar" class="nav-glyphish-example">
+      <ul>
+        <li><a href="#one" id="text" data-icon="text" data-theme="b"  >Text</a></li>
+        <li><a href="#two" id="video" data-icon="video" data-theme="b"  class="ui-btn-active ui-state-persist">Video</a></li>
+        <li><a href="#three" id="discuss" data-icon="discuss" data-theme="b"   >Discussion</a></li>
+        <li><a href="#four" id="notes" data-icon="notes" data-theme="b"    >Notes</a></li>
+      </ul>	 
+    </div><!-- /navbar --> 
+  </div><!--end header-->
+  <div data-role="content">
+   <!-- InstanceBeginEditable name="video content" -->Video Section 1c<!-- InstanceEndEditable -->
+   </div><!-- /content -->
+	<div data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="../print_versions/1-Introduction-to-Signals.pdf" rel="external">Print</a></li>
+        <li><a href="../a.html" rel="external">FAQS</a></li>
+        <li><a href="../a.html" rel="external">Credits</a></li>
+      </ul>
+    </div><!-- /footer navbar -->
+  </div><!-- /footer --> 
+</div><!--end page two-->
+<!-- Start of page three -->
+<div data-role="page" id="three">
+  <div data-role="header"  data-position="fixed" data-tap-toggle="false" data-theme="a">
+    <div data-role="controlgroup" id="pagenav" data-type="horizontal" data-theme="a" ></div>
+    <!-- END NAV -->
+    <div data-role="navbar" class="nav-glyphish-example">
+      <ul>
+        <li><a href="#one" id="text" data-icon="text" data-theme="b"  >Text</a></li>
+        <li><a href="#two" id="video" data-icon="video" data-theme="b"  >Video</a></li>
+        <li><a href="#three" id="discuss" data-icon="discuss" data-theme="b"  class="ui-btn-active ui-state-persist" >Discussion</a></li>
+        <li><a href="#four" id="notes" data-icon="notes" data-theme="b"    >Notes</a></li>
+      </ul>	 
+    </div><!-- /navbar --> 
+  </div><!--end header-->
+  <div data-role="content">
+   <!-- InstanceBeginEditable name="Discussion content" -->Discussion Section 1c<!-- InstanceEndEditable -->
+   </div><!-- /content -->
+	 <div data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="../print_versions/1-Introduction-to-Signals.pdf" rel="external">Print</a></li>
+        <li><a href="../a.html" rel="external">FAQS</a></li>
+        <li><a href="../a.html" rel="external">Credits</a></li>
+      </ul>
+    </div>
+  </div><!-- /footer --> 
+</div><!--end page three--> 
+<!-- Start of page four -->
+<div data-role="page" id="four">
+  <div data-role="header"  data-position="fixed" data-tap-toggle="false" data-theme="a">
+    <div data-role="controlgroup" id="pagenav" data-type="horizontal" data-theme="a" ></div>
+    <!-- END NAV -->
+    <div data-role="navbar" class="nav-glyphish-example">
+      <ul>
+        <li><a href="#one" id="text" data-icon="text" data-theme="b"  >Text</a></li>
+        <li><a href="#two" id="video" data-icon="video" data-theme="b"  >Video</a></li>
+        <li><a href="#three" id="discuss" data-icon="discuss" data-theme="b"   >Discussion</a></li>
+        <li><a href="#four" id="notes" data-icon="notes" data-theme="b"  class="ui-btn-active ui-state-persist"  >Notes</a></li>
+      </ul>	 
+    </div><!-- /navbar --> 
+  </div><!--end header-->
+  <div data-role="content">
+   <!-- InstanceBeginEditable name="Notes content" -->Notes Section 1c<!-- InstanceEndEditable -->
+   </div><!-- /content -->
+	 <div data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+    <div data-role="navbar" class="ui-state-persist">
+      <ul>
+        <li><a href="../print_versions/1-Introduction-to-Signals.pdf" rel="external">Print</a></li>
+        <li><a href="../a.html" rel="external">FAQS</a></li>
+        <li><a href="../a.html" rel="external">Credits</a></li>
+      </ul>
+    </div>
+  </div><!-- /footer --> 
+</div><!--end page four-->  
+</body>
+<!-- InstanceEnd --></html>
